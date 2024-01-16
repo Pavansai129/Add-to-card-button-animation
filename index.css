@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", "sans-serif";
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  background-color: #fff;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition-duration: 2s;
+}
+
+.img:hover {
+  content: url("https://rihaa.com/cdn/shop/products/image_600x_e66f9679-aa4d-4e3e-bdff-9a4057d5315e_600x.jpg?v=1668004970");
+}
+
+.product-details {
+  padding: 15px;
+  text-align: center;
+}
+.product-title {
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.product-starting-price {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+select {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+}
+/* button {
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid rgb(173, 175, 177);
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  position: relative;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  background-color: #b9ac7a;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 100%;
+}
+
+button:not(:hover)::before {
+  width: 0;
+  right: 0;
+  left: auto;
+} */
+
+.btn {
+  color: #000;
+  border: 1px solid gray;
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  transition: width 1s;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  color: rgb(40, 21, 117);
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: 0px;
+  background-color: rgb(243, 153, 26);
+  z-index: -1;
+  transition: all 1s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+.btn:not(:hover)::before {
+  width: 0;
+  right: 0;
+  left: auto;
+}
